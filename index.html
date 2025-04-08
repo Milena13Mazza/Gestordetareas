@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="styles4.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Tareas</h1>
+    <button id="addTaskBtn">Agregar Tarea</button>
+    <div id="tasksContainer" class="tasks"></div>
+  </div>
+
+  <div id="taskModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Nueva Tarea</h2>
+      <input type="text" id="taskTitle" placeholder="Título" />
+      <textarea id="taskDescription" placeholder="Descripción"></textarea>
+      <select id="taskPriority">
+        <option value="low">Baja</option>
+        <option value="medium">Media</option>
+        <option value="high">Alta</option>
+      </select>
+      <button id="saveTaskBtn">Guardar</button>
+    </div>
+  </div>
+
+  <script src="app4.js"></script>
+</body>
+</html>
