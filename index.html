@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Gestor de Tareas</h1>
+        <button id="openModal">Agregar Tarea</button>
+        <div class="kanban-board">
+            <div class="column" id="alta">
+                <h2>Alta</h2>
+                <div class="task-list" id="alta-tasks"></div>
+            </div>
+            <div class="column" id="media">
+                <h2>Media</h2>
+                <div class="task-list" id="media-tasks"></div>
+            </div>
+            <div class="column" id="baja">
+                <h2>Baja</h2>
+                <div class="task-list" id="baja-tasks"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Nueva Tarea</h2>
+            <input type="text" id="titulo" placeholder="Título" />
+            <textarea id="descripcion" placeholder="Descripción"></textarea>
+            <select id="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <button id="guardarTarea">Guardar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
